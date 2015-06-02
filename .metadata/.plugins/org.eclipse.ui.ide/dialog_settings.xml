@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.appcelerator.titanium.feature.rcp:1.0.7.201112281340-7e7aDbFFsJ-5PZT-4e-Q0FNchlMw"/>
+		<item value="com.appcelerator.titanium.feature:1.0.7.1325093126-6-7J79BAEEIEM9I4AG9OaHz-A-PZ"/>
+		<item value="com.appcelerator.titanium.studio:1.0.7.1325093126-7E-7V7c-h7FuaIKI"/>
+		<item value="com.aptana.feature.studio:3.0.7.201112281220-7E37K7HFGJHQUdGP8W_Iz0Jitq7M"/>
+		<item value="com.aptana.feature:3.0.7.1325099706-BJ7F8LBTDuY5meBG31DC34EVnIM5"/>
+		<item value="com.aptana.php.feature:3.0.3.1322528867-7D-27CEBBKBTTNQ"/>
+		<item value="org.eclipse.help:1.2.1.r362_v20101111-7e7jEVFDr6xg-LSlC_z0w1D"/>
+		<item value="org.eclipse.platform:3.6.2.r362_v20110210-9gF78Gs1FrIGnHDHWkEcopoN8AmxeZflGDGKQi"/>
+		<item value="org.eclipse.rcp:3.6.2.r362_v20101104-9SAxFMKFkSAqi8axkv1ZjegmiBLY"/>
+		<item value="org.python.pydev.django_templates.feature:2.2.4.2011121401"/>
+		<item value="org.python.pydev.feature:2.2.4.2011121401"/>
+		<item value="org.radrails.rails:3.0.3.201112281159-7e-7Q7f4kZPAAA6I"/>
+	</list>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="ShowDerived"/>
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/GuiaCataVino/Resources/app/view/MyView.js&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/KitchenSink/Resources/examples/version.js&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="17" key="DIALOG_Y_ORIGIN"/>
+			<item value="340" key="DIALOG_X_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="true" key="LINK_NAVIGATOR_TO_EDITOR"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="false" key="BUILD_NOW"/>
+		<item value="22" key="DIALOG_Y_ORIGIN"/>
+		<item value="false" key="BUILD_ALL"/>
+		<item value="796" key="DIALOG_X_ORIGIN"/>
+		<item value="425" key="DIALOG_HEIGHT"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

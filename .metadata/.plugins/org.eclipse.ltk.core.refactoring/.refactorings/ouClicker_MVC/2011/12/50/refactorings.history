@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ouClicker_MVC/Resources/images/icon_stats_32x32.png&apos; to &apos;icon_statsQuest_32x32.png&apos;" description="Rename resource &apos;icon_stats_32x32.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/images/icon_stats_32x32.png" name="icon_statsQuest_32x32.png" stamp="1323087077094" updateReferences="true"/>
+</session>

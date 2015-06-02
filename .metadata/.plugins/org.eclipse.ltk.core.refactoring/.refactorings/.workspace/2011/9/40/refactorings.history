@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ouClicker_MVC/Resources/app/view/ui/Copy of available.js&apos;" deleteContents="false" description="Delete resource &apos;ouClicker_MVC/Resources/app/view/ui/Copy of available.js&apos;" element1="/ouClicker_MVC/Resources/app/view/ui/Copy of available.js" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1317186188247"/>
+</session>

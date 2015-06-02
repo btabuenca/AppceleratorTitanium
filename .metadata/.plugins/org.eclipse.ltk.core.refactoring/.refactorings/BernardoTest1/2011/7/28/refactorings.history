@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;BernardoTest1/Resources/slider.js&apos; to &apos;nondefinedarea.js&apos;" description="Rename resource &apos;slider.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/slider.js" name="nondefinedarea.js" stamp="1309786913300" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;BernardoTest1/Resources/image_view_file.js&apos; to &apos;eiffel_data.js&apos;" description="Rename resource &apos;image_view_file.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/image_view_file.js" name="eiffel_data.js" stamp="1309787897218" updateReferences="true"/>
+</session>

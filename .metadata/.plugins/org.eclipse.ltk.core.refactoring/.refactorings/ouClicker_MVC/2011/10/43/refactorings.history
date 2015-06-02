@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ouClicker_MVC/Resources/app/view/ui/forbidden.js&apos; to &apos;forbidden.jsssssssss&apos;" description="Rename resource &apos;forbidden.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/app/view/ui/forbidden.js" name="forbidden.jsssssssss" stamp="1318959407250" updateReferences="true"/>
+</session>

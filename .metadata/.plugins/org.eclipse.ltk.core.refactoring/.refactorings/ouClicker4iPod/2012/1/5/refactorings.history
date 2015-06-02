@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ouClicker4iPod/Resources/app/view/ui/save_slider.js&apos; to &apos;saveSlider.js&apos;" description="Rename resource &apos;save_slider.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/app/view/ui/save_slider.js" name="saveSlider.js" stamp="1327861961214" updateReferences="true"/>
+</session>

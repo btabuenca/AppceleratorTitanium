@@ -1,0 +1,358 @@
+app.view.ui.question = {};
+
+
+// Self invoking function
+(function() {
+
+	app.view.ui.getQuestionWindow = function () {
+		
+		var winQuestion = Titanium.UI.createWindow({
+			className:'winQuestion',
+			title:myModel.getQuestionnaireLongDescription(),
+			backgroundColor:'#ffffff',
+			barColor:'#13386c'
+		});
+		
+
+
+		Ti.API.info('Setting gender to '+myModel.getQuestionnaireId());
+		myModel.setSliderGender(myModel.getQuestionnaireId());
+
+/*
+var buttonObjects = [
+	{title:'Female', width:100, enabled:false},
+	{title:'Male', width:100}
+];
+		
+		var bb1 = Titanium.UI.createButtonBar({
+			labels:buttonObjects,
+			backgroundColor:'#336699',
+			top:400,
+			style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
+			height:25,
+			width:200
+		});
+		
+		winQuestion.add(bb1);
+		
+		//
+		// UPDATE LABELS AND DISPLAY BUTTON INDEX ON CLICK
+		//
+		var plain = false;
+		bb1.addEventListener('click', function(e)
+		{
+			Ti.API.info('listener sourde '+e.source);
+			Ti.API.info('listener type '+e.type);
+			Ti.API.info('listener x '+e.x);
+			Ti.API.info('listener y '+e.y);
+			Ti.API.info('listener index '+e.index);
+				
+					
+			if (e.index == 0)
+			{
+				
+				if (plain)
+				{
+					bb1.style = Titanium.UI.iPhone.SystemButtonStyle.BAR;
+					plain=false;
+				}
+				else
+				{
+					bb1.style = Titanium.UI.iPhone.SystemButtonStyle.PLAIN;
+					plain=true;
+				}
+
+				buttonObjects[0].enabled = true;
+				buttonObjects[1].enabled = false;
+				myModel.setSliderGender(0);
+				Ti.API.info('Setting gender to female');
+				
+			}
+			
+			// toggle enabled
+			else if (e.index == 1)
+			{
+				buttonObjects[0].enabled = false;
+				buttonObjects[1].enabled = true;
+				myModel.setSliderGender(1);
+				
+				Ti.API.info('Setting gender to male');
+				
+	
+			}
+	
+
+		});
+		
+*/		
+		
+		// View		
+		var questionnaireDescriptionWrap = Ti.UI.createView({ 
+			backgroundColor: '#ffffff', 
+			borderRadius: 12, 
+			height: 'auto', 
+			width: 300, 
+			top: 5 
+		});
+		
+		
+		// Elements in view		
+		var questionnaireDescription = Ti.UI.createLabel({ 
+			text: myModel.getQuestionnaireDescription(), 
+							color:'#576996',
+							font: {
+								fontSize:16,
+								fontWeight:'bold',
+								fontFamily:'Arial'
+							},
+			width: 280, 
+			height:'auto', 
+			top: 5 
+		});
+		
+		var limitLabel = Ti.UI.createLabel({ 
+			text: '', 
+			height:'auto', 
+			top: 55 
+		});
+		
+		questionnaireDescriptionWrap.add(questionnaireDescription);
+		questionnaireDescriptionWrap.add(limitLabel);
+		
+		
+		
+		
+		//
+		// Sliders
+		//
+		
+		// One month
+		var oneMonthLabel = Titanium.UI.createLabel({
+			text:' ' ,
+			color:'#000000',
+			font:{
+				fontFamily:'Helvetica Neue',
+				fontSize:15
+			},
+			textAlign:'center',
+			top:75,
+			width:300,
+			height:'auto'
+		});
+		
+		var oneMonthSlider = Titanium.UI.createSlider({
+			min:0,
+			max:25,
+			value:5,
+			width:250,
+			height:'auto',
+			top:95
+		});
+		oneMonthSlider.addEventListener('change',function(e)
+		{
+			oneMonthLabel.text = Math.round(e.value) + ' partners in 1 month.';
+			myModel.setSliderOneMonth(Math.round(e.value));
+		});
+		oneMonthSlider.value = 0;
+		myModel.setSliderOneMonth(0);
+		
+		// Six months
+		var sixMonthsLabel = Titanium.UI.createLabel({
+			text:' ' ,
+			color:'#000000',
+			font:{
+				fontFamily:'Helvetica Neue',
+				fontSize:15
+			},
+			textAlign:'center',
+			top:125,
+			width:300,
+			height:'auto'
+		});
+		
+		var sixMonthsSlider = Titanium.UI.createSlider({
+			min:0,
+			max:25,
+			value:5,
+			width:250,
+			height:'auto',
+			top:145
+		});
+		sixMonthsSlider.addEventListener('change',function(e)
+		{
+			sixMonthsLabel.text = Math.round(e.value) + ' partners in 6 months.';
+			myModel.setSliderSixMonths(Math.round(e.value));
+		});
+		sixMonthsSlider.value = 0;
+		myModel.setSliderSixMonths(0);
+
+
+		// One year
+		var oneYearLabel = Titanium.UI.createLabel({
+			text:' ' ,
+			color:'#000000',
+			font:{
+				fontFamily:'Helvetica Neue',
+				fontSize:15
+			},
+			textAlign:'center',
+			top:175,
+			width:300,
+			height:'auto'
+		});
+		
+		var oneYearSlider = Titanium.UI.createSlider({
+			min:0,
+			max:25,
+			value:5,
+			width:250,
+			height:'auto',
+			top:195
+		});
+		oneYearSlider.addEventListener('change',function(e)
+		{
+			oneYearLabel.text = Math.round(e.value) + ' partners in 1 year.';
+			myModel.setSliderOneYear(Math.round(e.value));
+		});
+		oneYearSlider.value = 0;
+		myModel.setSliderOneYear(0);
+
+
+		// Five years
+		var fiveYearsLabel = Titanium.UI.createLabel({
+			text:' ' ,
+			color:'#000000',
+			font:{
+				fontFamily:'Helvetica Neue',
+				fontSize:15
+			},
+			textAlign:'center',
+			top:225,
+			width:300,
+			height:'auto'
+		});
+		
+		var fiveYearsSlider = Titanium.UI.createSlider({
+			min:0,
+			max:25,
+			value:5,
+			width:250,
+			height:'auto',
+			top:245
+		});
+		fiveYearsSlider.addEventListener('change',function(e)
+		{
+			fiveYearsLabel.text = Math.round(e.value) + ' partners in 5 years.';
+			myModel.setSliderFiveYears(Math.round(e.value));
+		});
+		fiveYearsSlider.value = 0;
+		myModel.setSliderFiveYears(0);
+
+
+		// Ten years
+		var tenYearsLabel = Titanium.UI.createLabel({
+			text:' ' ,
+			color:'#000000',
+			font:{
+				fontFamily:'Helvetica Neue',
+				fontSize:15
+			},
+			textAlign:'center',
+			top:275,
+			width:300,
+			height:'auto'
+		});
+		
+		var tenYearsSlider = Titanium.UI.createSlider({
+			min:0,
+			max:25,
+			value:5,
+			width:250,
+			height:'auto',
+			top:295
+		});
+		tenYearsSlider.addEventListener('change',function(e)
+		{
+			tenYearsLabel.text = Math.round(e.value) + ' partners in ten years.';
+			myModel.setSliderTenYears(Math.round(e.value));
+		});
+		tenYearsSlider.value = 0;
+		myModel.setSliderTenYears(0);
+
+
+		// Whole life
+		var wholeLifeLabel = Titanium.UI.createLabel({
+			text:' ' ,
+			color:'#000000',
+			font:{
+				fontFamily:'Helvetica Neue',
+				fontSize:15
+			},
+			textAlign:'center',
+			top:325,
+			width:300,
+			height:'auto'
+		});
+		
+		var wholeLifeSlider = Titanium.UI.createSlider({
+			min:0,
+			max:25,
+			value:5,
+			width:250,
+			height:'auto',
+			top:345
+
+		});
+		wholeLifeSlider.addEventListener('change',function(e)
+		{
+			wholeLifeLabel.text = Math.round(e.value) + ' partners in your whole life.';
+			myModel.setSliderWholeLife(Math.round(e.value));
+		});
+		wholeLifeSlider.value = 0;
+		myModel.setSliderWholeLife(0);
+		
+		// Button
+		var sendButton = Titanium.UI.createButton({
+			title:'Send',
+			height:40,
+			width:200,
+			top:415
+		});
+		sendButton.addEventListener('click', function()
+		{
+			Ti.API.info('Sending');
+			myController.saveSlider();
+			winQuestion.close();
+				
+		});		
+		
+		//
+		// Add elements
+		//
+		winQuestion.add(questionnaireDescriptionWrap);
+		
+		winQuestion.add(oneMonthLabel);
+		winQuestion.add(oneMonthSlider);
+		
+		winQuestion.add(sixMonthsLabel);
+		winQuestion.add(sixMonthsSlider);
+		
+		winQuestion.add(oneYearLabel);
+		winQuestion.add(oneYearSlider);
+		
+		winQuestion.add(fiveYearsLabel);
+		winQuestion.add(fiveYearsSlider);
+		
+		winQuestion.add(tenYearsLabel);
+		winQuestion.add(tenYearsSlider);
+		
+		winQuestion.add(wholeLifeLabel);
+		winQuestion.add(wholeLifeSlider);
+
+		winQuestion.add(sendButton);
+
+
+
+		return winQuestion;
+	}
+})();

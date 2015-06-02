@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AudienceSurvey/Resources/result.rtf&apos; to &apos;result_query.rtf&apos;" description="Rename resource &apos;result.rtf&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/result.rtf" name="result_query.rtf" stamp="1310458664396" updateReferences="true"/>
+</session>

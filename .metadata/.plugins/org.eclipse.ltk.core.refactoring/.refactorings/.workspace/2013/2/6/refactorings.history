@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;pp&apos;" deleteContents="true" description="Delete resource &apos;pp&apos;" element1="/pp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1360352011255"/>&#x0A;<refactoring comment="Delete resource &apos;celstecClicker/Resources/Titanium Studio Workspace&apos;" deleteContents="false" description="Delete resource &apos;celstecClicker/Resources/Titanium Studio Workspace&apos;" element1="/celstecClicker/Resources/Titanium Studio Workspace" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1360352176871"/>
+</session>
